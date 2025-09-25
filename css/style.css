@@ -1,0 +1,160 @@
+ * {
+    margin: 0;
+    padding: 0;
+ }
+
+body {
+    
+     background-color: #FAFAFA;
+     font-family: 'Open Sans Regula', sans-serif;
+      font-weight: 400px;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+
+
+.header-logo {
+    display: block;
+    flex-direction: column;
+    padding: 0%;
+    padding: 5px 10px;
+    margin: 5px 25px;
+    
+}
+.header-logo  p {
+    padding:0  4px;
+    font-size: 15px;
+    opacity: 75%;
+}
+
+#logo1 {
+  display: block;
+  width: 90px;
+  object-fit: contain;
+  padding: 2%;
+}
+
+.contact-call {
+     text-decoration: none;
+     display: flex;
+     align-items: center;
+}
+
+.contact-call a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #0EA5E9;
+  opacity: 90%;
+}
+
+.contact-call  .fa-solid {
+    align-items: center;
+    padding: 0;
+    color: #0EA5E9;
+    font-size: 14px;
+    vertical-align: middle;
+
+}
+.header-link {
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.budget {
+    padding: 5px;
+    width: 200px;
+    height: 32px;
+    border: none;
+    font-size: 16px;
+    color: #ffff;
+    border-radius:  8px;
+    background-color: #0EA5E9;
+}
+
+.header-link .fa-whatsapp {
+    padding: 4px;
+    font-size: 15px;
+}
+
+.section-one {
+    height: 100vh;
+    width: 100%;
+    background-color: #001E49;
+    display: flex;
+    flex-direction: row;
+   
+} 
+
+.presentation{
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: auto ;
+  margin:4% 2%;
+}
+
+.presentation h1{
+
+    color: #ffff;
+    font-size: 2.5rem; 
+    margin-left: 2%;
+    padding: 5px;
+   
+
+}
+
+
+.presentation h2 {
+    color: #0EA5E9;
+    font-size: 2.5rem;
+    padding:0 2%;
+    margin-bottom: 2%;
+}
+
+.presentation p {
+    color: #ffff;
+    opacity: 90%;
+    padding:1% 2% 0;
+    line-height: 1.5;
+}
+
+.presentation h3 {
+    color: #ffff;
+    opacity: 95%;
+    padding: 1% 3px 6%;
+
+}
+
+.presentation i {
+    border-radius: 2px;
+    color: #0EA5E9;
+    padding: 1%  0;
+}
+
+.presentation-image {
+   display: flex;
+   justify-content: center;
+  
+   
+  
+}
+
+#logo-pag2 {
+  
+    width: 150%;
+    margin: 5%;
+    border: none;
+    object-fit: cover;
+    padding: 2%;
+     
+}
