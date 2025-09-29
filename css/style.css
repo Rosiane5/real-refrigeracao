@@ -7,7 +7,8 @@ body {
     
      background-color: #FAFAFA;
      font-family: 'Open Sans Regula', sans-serif;
-      font-weight: 400px;
+     font-weight: 400px;
+     overflow-x: hidden;
 }
 
 .nav-bar {
@@ -93,21 +94,26 @@ body {
     flex-direction: row;
    
 } 
+.main-presentation {
+    width: 50%;
+    height: 100%;
+    
+}
 
 .presentation{
-  width: 50%;
-  height: 90%;
+  width: 70%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   padding: auto ;
-  margin:4% 2%;
+  margin: 6% 6%;
 }
 
 .presentation h1{
 
     color: #ffff;
     font-size: 2.5rem; 
-    margin-left: 2%;
+    margin-left: 6%;
     padding: 5px;
    
 
@@ -117,14 +123,14 @@ body {
 .presentation h2 {
     color: #0EA5E9;
     font-size: 2.5rem;
-    padding:0 2%;
+    padding:0 6%;
     margin-bottom: 2%;
 }
 
 .presentation p {
     color: #ffff;
     opacity: 90%;
-    padding:1% 2% 0;
+    padding:1% 6% 0;
     line-height: 1.5;
 }
 
@@ -138,7 +144,7 @@ body {
 .presentation i {
     border-radius: 2px;
     color: #0EA5E9;
-    padding: 1%  0;
+    padding: 4%  0;
 }
 
 .presentation-image {
@@ -154,7 +160,200 @@ body {
     width: 150%;
     margin: 5%;
     border: none;
+    border-radius: 10%;
     object-fit: cover;
     padding: 2%;
      
+}
+
+.section-two {
+  height: 130vh;
+  width: 100%;
+ 
+
+}
+
+.about-wrapper{
+    display: flex;
+    background-color:#FAFAFA;
+    width: 100%;
+    height: 70vh;
+}
+
+.about-us {
+    width: 100%;
+    padding-left: 3%;
+    
+}
+
+#img-about-us {
+    width: 50px;
+    height: 60%;
+    object-fit: contain;
+}
+
+.about-us h1 {
+    color: #001E49;
+    margin: 2%;
+    padding: 3px;
+}
+
+.about-us p {
+    margin: 2%;
+    padding-left: 4%;
+    font-size: 18px;
+    color: black;
+    line-height: 1.5;
+}
+
+
+.about-image {
+    display: flex;
+    width: 100%;
+   
+    
+}
+
+
+#image-concert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    padding: 10%;
+    width: 80%;
+    height: 60%;
+    object-fit: contain;
+}
+ /*Nossos Serviços*/
+
+.services {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    
+   
+}
+
+.services h2 {
+    text-align: center;
+    color: #001E49;
+
+}
+
+.services-wrapper {
+    display: flex;
+    justify-content: center; 
+    gap: 40px;
+    flex-wrap: wrap; 
+    margin:14px  0 25px;
+    padding: 0 10px; 
+    box-sizing: border-box;
+}
+
+.services .card {
+    width: 25%; 
+    min-height: 25%;
+    min-width: 150px;
+    background-color: #0EA5E9;
+    opacity: 90%;
+    padding: 35px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden
+}
+
+ .services p {
+    color: #fff;
+    font-size: 16px;
+    padding: 4px;
+    
+ }  
+ 
+.services i, p{
+    color:  black;
+    font-size: 17px;
+    padding: 2px;
+    
+}
+
+.section-four {
+    
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ececec;
+}
+
+
+.mark h2 {
+  color: #001E49;
+  padding: 5px;
+
+}
+
+
+.conatiner-mark {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+  .mark  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;
+    width: 60%;
+    height:35%;
+    margin-bottom: 2%;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    
+}
+
+.brands  {
+    display: flex;
+    list-style: none;
+    padding:10px 5px;
+    color: #001E49;
+
+}
+
+.brands li {
+    padding: 2px;
+    margin: 2px;
+}
+
+
+.differentials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    padding: 2px;
+    background-color: #ececec;
+
+}
+
+.concert {
+    width: 100%;
+    height: 50%;
+    background-color: #0EA5E9;
+}
+
+
+
+#info-mark {
+    width: 70px;
 }
