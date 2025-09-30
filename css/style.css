@@ -1,21 +1,31 @@
  * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
  }
 
 body {
     
-     background-color: #FAFAFA;
-     font-family: 'Open Sans Regula', sans-serif;
-     font-weight: 400px;
+     background-color: #eee;
+     font-family: 'Open Sans', sans-serif; 
+     color: #333;
+     font-weight: 400;
      overflow-x: hidden;
+     
+} 
+h1, h2, h3 {
+    color: #001E49;
+    font-weight: 700; 
 }
 
 .nav-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    align-items: center;
+    padding: 1px;
+    font-weight: 600;
+
 }
 
 
@@ -137,6 +147,7 @@ body {
 .presentation h3 {
     color: #ffff;
     opacity: 95%;
+    font-size: 15px;
     padding: 1% 3px 6%;
 
 }
@@ -150,14 +161,15 @@ body {
 .presentation-image {
    display: flex;
    justify-content: center;
-  
    
   
 }
 
 #logo-pag2 {
   
+    display: block;
     width: 150%;
+     max-width: 600px; 
     margin: 5%;
     border: none;
     border-radius: 10%;
@@ -167,29 +179,33 @@ body {
 }
 
 .section-two {
-  height: 130vh;
+  height: 150vh;
   width: 100%;
+ 
  
 
 }
 
 .about-wrapper{
-    display: flex;
-    background-color:#FAFAFA;
-    width: 100%;
-    height: 70vh;
-}
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto 0px auto;
+}
 .about-us {
-    width: 100%;
-    padding-left: 3%;
+    width: 80%;
+    
+    
     
 }
 
 #img-about-us {
     width: 50px;
-    height: 60%;
+    height: 50%;
     object-fit: contain;
+    
 }
 
 .about-us h1 {
@@ -201,7 +217,7 @@ body {
 .about-us p {
     margin: 2%;
     padding-left: 4%;
-    font-size: 18px;
+    font-size: 1rem;
     color: black;
     line-height: 1.5;
 }
@@ -209,7 +225,9 @@ body {
 
 .about-image {
     display: flex;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
    
     
 }
@@ -220,9 +238,9 @@ body {
     justify-content: center;
     align-items: center;
     margin: 2%;
-    padding: 10%;
+    padding: 10px;
     width: 80%;
-    height: 60%;
+    height: 50%;
     object-fit: contain;
 }
  /*Nossos Serviços*/
@@ -230,8 +248,10 @@ body {
 .services {
     display: flex;
     flex-direction: column;
+    background-color: #eee;
     width: 100%;
-    
+    height: 50%;
+  
     
    
 }
@@ -253,11 +273,11 @@ body {
 }
 
 .services .card {
-    width: 25%; 
-    min-height: 25%;
+    width: 320px; 
+    min-height: 40px;
     min-width: 150px;
-    background-color: #0EA5E9;
-    opacity: 90%;
+    background-color: #ffffff;
+
     padding: 35px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     border-radius: 10px;
@@ -267,65 +287,38 @@ body {
 }
 
  .services p {
-    color: #fff;
+    color: #001E49;
+    font-weight: 600;
     font-size: 16px;
     padding: 4px;
     
  }  
  
-.services i, p{
+.services i{
+    text-align: center;
     color:  black;
-    font-size: 17px;
+    font-size: 18px;
     padding: 2px;
     
 }
 
 .section-four {
     
-    height: 120vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ececec;
-}
-
-
-.mark h2 {
-  color: #001E49;
-  padding: 5px;
-
-}
-
-
-.conatiner-mark {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-  .mark  {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #F5F5F5;
-    width: 60%;
-    height:35%;
-    margin-bottom: 2%;
-    border-radius: 18px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     
 }
+
 
 .brands  {
     display: flex;
     list-style: none;
     padding:10px 5px;
-    color: #001E49;
+    color: #0EA5E9;
+    font-weight: 600 ;
+    font-size: 1rem;
 
 }
 
@@ -338,22 +331,172 @@ body {
 .differentials {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    margin: 0 auto;  
     width: 100%; 
+    height: 50%;
     padding: 2px;
-    background-color: #ececec;
+    padding: 20px 0;
+    background-color: #eee;
+    
+    
+
+
 
 }
+.differentials  h2{
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    margin: 2px;
+    
+    
+}
+
+.topics-list {
+    display: grid;
+    list-style: none;
+    padding: 20px ;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    
+
+}
+
+.topics-list li {
+    padding: 26px ;
+    gap: 1px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.topics-list i {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 14px;
+    background-color:  #0EA5E9;
+    width: 30px;
+    height: 30px;
+    border-radius: 90px;
+    margin: 2px;
+    align-self: center;
+    
+}
+
 
 .concert {
     width: 100%;
     height: 50%;
     background-color: #0EA5E9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
+.concert h2, p, a {
+    padding: 7px;
+    color: #FAFAFA;
 
+} 
 
+.concert button {
+    padding: 5px;
+    width: 250px;
+    height: 32px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0EA5E9;
+    border-radius:  8px;
+    background-color: #ffff;
+     
+}
+
+footer {
+    width: 100%;
+    min-height: 350px;
+    background-color: #001E49;
+}
+ 
+.info {
+    height: 300px;
+    display: flex; 
+     max-width: 1200px;
+   
+    justify-content: space-around;
+    align-items: center;
+   
+   
+    
+}
 #info-mark {
-    width: 70px;
+    width: 100px;
 }
+
+
+.mark-footer p {
+    font-size: 13px;
+    padding: 6px;
+    
+}
+
+
+
+.info h3 {
+    color: #0EA5E9;
+    padding: 4px;
+}
+
+.info li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: #FAFAFA;
+    font-size: 14px;
+    opacity: 80%;
+    padding:6px 2px 2px;
+  
+}
+
+
+.info-bord{
+   width: 95%;
+   margin: 0 auto; 
+   align-items: center;
+   border-bottom: 1px solid #0EA5E9 ;
+   opacity: 80%;
+}
+
+.contact i {
+    color: #FAFAFA;
+    background-color:  #0EA5E9;
+    width: 15px;
+    height: 15px; 
+    padding: 2px;
+    font-size: 9px;
+    border-radius: 15px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+ 
+.direct {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ padding: 4px;
+ font-size: 12px;
+}
+
+
+
