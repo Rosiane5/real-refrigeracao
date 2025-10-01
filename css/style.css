@@ -20,18 +20,21 @@ body {
 h1, h2, h3 {
     color: #001E49;
     font-weight: 700; 
+    animation: fadeIn 1.2s ease-in;
 }
 
 a {
     text-decoration: none;
     color: inherit;
 }
+
 header {
     background-color: #FFF;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
+    animation: fadeInDown 1s ease-out;
 }
 
 /* ===== Navbar ===== */
@@ -40,10 +43,10 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 1900px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 5px 20px;
-    
+    animation: fadeIn 1.2s ease-in;
 }
 
 #logo1 {
@@ -55,6 +58,7 @@ header {
     color: #0EA5E9;
     font-weight: 600;
 }
+
 .contact-call .fa-solid {
     margin-right: 5px;
 }
@@ -69,7 +73,14 @@ header {
     border-radius: 8px;
     background-color: #0EA5E9;
     cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
+.budget:hover {
+    transform: translateY(-3px);
+    background-color: #0ca3d9;
+}
+
 .header-link .fa-whatsapp {
     margin-right: 5px;
 }
@@ -79,16 +90,27 @@ header {
     min-height: 90vh; 
     width: 100%;
     background-color: #001E49;
-    display: flex;
-    align-items: center;
+    display: flex; /* Necessário para centralizar o container verticalmente */
+    align-items: center; /* Centraliza o container verticalmente */
     padding: 40px 20px;
-    gap: 20px;
+    animation: fadeInUp 1.2s ease;
 } 
 
-.main-presentation {
-    flex: 1;
+/* A "Caixa Mágica" de Centralização */
+.container {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1900px; /* Largura máxima do conteúdo */
+    margin: 0 auto;     /* Centraliza na tela */
+}
+
+.main-presentation {
+    width: 60%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    animation: fadeInLeft 1.2s ease;
 }
 
 .presentation {
@@ -112,6 +134,7 @@ header {
     opacity: 90%;
     line-height: 1.6;
     margin-bottom: 20px;
+    animation: fadeIn 1.5s ease;
 }
 
 .presentation-highlights {
@@ -123,30 +146,44 @@ header {
     opacity: 95%;
     font-size: 1rem;
     padding: 5px 0;
+    animation: fadeIn 1.8s ease;
 }
 
 .presentation-highlights i {
     color: #0EA5E9;
     margin-right: 8px;
 }
-
+ 
 .presentation-image {
+    background-color: #0ca3d9;
+    position: relative;
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 500px; 
+    aspect-ratio: 1 / 1.1;
+    overflow: hidden;
+    border-radius: 10%;
+    animation: fadeInRight 1.2s ease;
 }
 
-#logo-pag2 {
+.slider-img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 500px; 
-    border-radius: 10%;
+    height: 100%;
     object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.slider-img.active {
+    opacity: 1;
 }
 
 /* ===== Seção 2 - Sobre / Quem somos ===== */
 .section-two {
     padding: 60px 20px;
+    animation: fadeInUp 1.2s ease;
 }
 
 .about-wrapper{
@@ -185,6 +222,7 @@ header {
 .about-image {
     flex: 0.8;
     text-align: center;
+    animation: fadeIn 1.5s ease;
 }
 
 #image-concert {
@@ -198,12 +236,12 @@ header {
 /* Diferenciais */
 .differentials {
     margin-top: 40px;
-    justify-content: center;
+    animation: fadeInUp 1.2s ease;
 }
 
 .differentials h3 {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.8rem;
     margin-bottom: 30px;
 }
 
@@ -216,17 +254,18 @@ header {
 
 .topics-list li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 15px;
     font-weight: 600;
+    animation: fadeIn 1.5s ease;
 }
 
 .topics-list i {
     color: #FFF;
-    font-size: 12px;
+    font-size: 14px;
     background-color: #0EA5E9;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%; 
     display: flex;
     justify-content: center;
@@ -238,12 +277,14 @@ header {
 section.three {
     background-color: #F0F4F8;
     padding: 60px 30px; 
+    animation: fadeInUp 1.2s ease;
 }
 .services h2 {
     text-align: center;
     font-size: 2.2rem;
     margin-bottom: 40px;
 }
+
 .services-wrapper {
     display: flex;
     justify-content: center; 
@@ -252,6 +293,7 @@ section.three {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .services .card {
     width: 300px; 
     background-color: #ffffff;
@@ -260,7 +302,14 @@ section.three {
     border-radius: 8px;
     border-bottom: 3px solid #0EA5E9;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.services .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
 .services .card i {
     background-color: #0EA5E9;
     margin: 0 auto 20px auto;
@@ -273,6 +322,7 @@ section.three {
     justify-content: center;
     align-items: center;
 }
+
 .services .card p {
     font-size: 1rem;
     line-height: 1.5;
@@ -280,11 +330,12 @@ section.three {
     font-weight: 600;
 }  
 
-/* ===== Seção 4 - Chamada para Ação (CTA) ===== */
+/* ===== Seção 4  */
 .section-four {
     background-color: #0EA5E9;
     padding: 60px 20px;
     text-align: center;
+    animation: fadeInUp 1.2s ease;
 }
 
 .concert h2 {
@@ -310,6 +361,12 @@ section.three {
     border-radius: 8px;
     background-color: #ffff;
     cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#budget2:hover {
+    transform: translateY(-3px);
+    background-color: #e0e0e0;
 }
 
 /* ===== Footer ===== */
@@ -318,6 +375,7 @@ footer {
     background-color: #001E49;
     color: #FAFAFA;
     padding: 50px 20px 20px;
+    animation: fadeInUp 1.2s ease;
 }
 
 .info {
@@ -328,33 +386,27 @@ footer {
     max-width: 1200px;
     margin: 0 auto 40px;
 }
-
 .mark-footer, .contact, .time {
     flex: 1;
     min-width: 250px;
 }
-
 #info-mark {
     width: 100px;
     margin-bottom: 15px;
 }
-
 .mark-footer p {
     font-size: 0.9rem;
     opacity: 0.8;
     line-height: 1.6;
 }
-
 footer h3 {
     color: #0EA5E9;
     margin-bottom: 15px;
     font-size: 1.2rem;
 }
-
 footer ul {
     list-style: none;
 }
-
 footer li {
     font-size: 0.95rem;
     opacity: 0.9;
@@ -363,27 +415,12 @@ footer li {
     align-items: center;
     gap: 10px;
 }
-
-footer .contact i {
-    color: #FAFAFA;
-    background-color: #0EA5E9;
-    width: 24px;
-    height: 24px; 
-    padding: 5px;
-    font-size: 12px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .info-bord {
     border-top: 1px solid #0c2a5a;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .direct {
     text-align: center;
     padding-top: 20px;
@@ -391,50 +428,88 @@ footer .contact i {
     opacity: 0.7;
 }
 
-/* ============================================= */
-/* ===== MEDIA QUERIES PARA RESPONSIVIDADE ===== */
-/* ============================================= */
 
-/* Telas de tablets (até 992px) */
+/* ================== ANIMAÇÕES ================== */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* ===== MEDIA QUERIES PARA RESPONSIVIDADE */
+/* Para Tablets e telas um pouco menores */
 @media (max-width: 992px) {
-    .section-one {
+    .container {
         flex-direction: column-reverse;
         text-align: center;
     }
+
     .main-presentation, .presentation-image {
-        width: 100%;
-        flex: none;
+        max-width: 100%; /* Ocupa toda a largura do container */
     }
-    .presentation-image {
-        margin-bottom: 40px;
-    }
+
     .about-wrapper {
         flex-direction: column;
+        text-align: center;
     }
+
     .about-us, .about-image {
-        width: 100%;
         flex: none;
+        width: 100%;
     }
+
     .about-image {
         margin-top: 40px;
     }
 }
 
-/* Telas de celulares (até 768px) */
+/* Para Celulares */
 @media (max-width: 768px) {
     .nav-bar {
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
         padding: 15px;
     }
+
     .presentation h1, .presentation h2 {
         font-size: 2rem;
     }
+
+    .services-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services .card {
+        width: 90%;
+        max-width: 320px;
+    }
+
     .info {
         flex-direction: column;
         text-align: center;
         align-items: center;
     }
+
     footer li {
         justify-content: center;
     }
