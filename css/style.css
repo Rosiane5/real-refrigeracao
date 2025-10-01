@@ -1,4 +1,3 @@
-/* ===== Reset Básico e Configurações Globais ===== */
 * {
     margin: 0;
     padding: 0;
@@ -37,7 +36,6 @@ header {
     animation: fadeInDown 1s ease-out;
 }
 
-/* ===== Navbar ===== */
 .nav-bar {
     display: flex;
     flex-direction: row;
@@ -85,24 +83,22 @@ header {
     margin-right: 5px;
 }
 
-/* ===== Seção 1 - Apresentação ===== */
 .section-one {
     min-height: 90vh; 
     width: 100%;
     background-color: #001E49;
-    display: flex; /* Necessário para centralizar o container verticalmente */
-    align-items: center; /* Centraliza o container verticalmente */
+    display: flex; 
+    align-items: center; 
     padding: 40px 20px;
     animation: fadeInUp 1.2s ease;
 } 
 
-/* A "Caixa Mágica" de Centralização */
 .container {
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 1900px; /* Largura máxima do conteúdo */
-    margin: 0 auto;     /* Centraliza na tela */
+    max-width: 1900px; 
+    margin: 0 auto;     
 }
 
 .main-presentation {
@@ -180,7 +176,6 @@ header {
     opacity: 1;
 }
 
-/* ===== Seção 2 - Sobre / Quem somos ===== */
 .section-two {
     padding: 60px 20px;
     animation: fadeInUp 1.2s ease;
@@ -233,7 +228,6 @@ header {
     border-radius: 10px;
 }
 
-/* Diferenciais */
 .differentials {
     margin-top: 40px;
     animation: fadeInUp 1.2s ease;
@@ -273,7 +267,6 @@ header {
     flex-shrink: 0;
 }
 
-/* ===== Seção 3 - Nossos Serviços ===== */
 section.three {
     background-color: #F0F4F8;
     padding: 60px 30px; 
@@ -330,7 +323,6 @@ section.three {
     font-weight: 600;
 }  
 
-/* ===== Seção 4  */
 .section-four {
     background-color: #0EA5E9;
     padding: 60px 20px;
@@ -369,7 +361,6 @@ section.three {
     background-color: #e0e0e0;
 }
 
-/* ===== Footer ===== */
 footer {
     width: 100%;
     background-color: #001E49;
@@ -428,8 +419,6 @@ footer li {
     opacity: 0.7;
 }
 
-
-/* ================== ANIMAÇÕES ================== */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -455,8 +444,6 @@ footer li {
     to { opacity: 1; transform: translateX(0); }
 }
 
-/* ===== MEDIA QUERIES PARA RESPONSIVIDADE */
-/* Para Tablets e telas um pouco menores */
 @media (max-width: 992px) {
     .container {
         flex-direction: column-reverse;
@@ -464,7 +451,7 @@ footer li {
     }
 
     .main-presentation, .presentation-image {
-        max-width: 100%; /* Ocupa toda a largura do container */
+        max-width: 100%; 
     }
 
     .about-wrapper {
@@ -482,7 +469,6 @@ footer li {
     }
 }
 
-/* Para Celulares */
 @media (max-width: 768px) {
     .nav-bar {
         flex-direction: column;
