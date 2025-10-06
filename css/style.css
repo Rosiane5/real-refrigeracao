@@ -233,9 +233,9 @@ header {
     animation: fadeInUp 1.2s ease;
 }
 
-.differentials h3 {
+.differentials h4 {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 30px;
 }
 
