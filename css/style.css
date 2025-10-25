@@ -424,6 +424,29 @@ footer li {
     font-size: 0.85rem;
     opacity: 0.7;
 }
+.whatsapp-flutuante {
+  position: fixed;      
+  bottom: 30px;           
+  right: 20px;            
+  background-color: #25D366;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s;
+  z-index: 1000;         
+}
+
+.whatsapp-flutuante:hover {
+  background-color: #1ebe57;
+}
+
 
 @keyframes fadeIn {
     from { opacity: 0; }
