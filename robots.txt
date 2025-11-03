@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://realrefrigeracaobh.com.br/sitemap.xml
+Sitemap: https://www.realrefrigeracaobh.com.br/sitemap.xml
